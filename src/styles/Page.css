@@ -1,0 +1,53 @@
+p {
+    font-family: monospace;
+    color: #555555;
+}
+
+#home {
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+}
+
+.introtext {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.redword {
+    color: red;
+}
+
+.purpleword {
+    color: #BF00FF;
+}
+
+.majortext {
+    font-size: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    margin-left: 0;
+    padding-top: 15px;
+    background-color: #c6d8ff;
+    width: 100%;
+}
+
+.ab {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.aboutmetext {
+    font-size: 22px;
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444444;
+}
