@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+.blueword a {
+    color: rgb(57, 156, 255);
+    font-weight: 600;
+}
+
+.redword a {
+    color: red;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5%;
+    padding: 20px;
+}
 /** NavBar Styling */
 * {
-    background-color: rgb(255, 252, 249);
+    background-color: rgb(252, 245, 239);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -85,10 +104,6 @@
     justify-content: center;
 }
 
-.redword {
-    color: red;
-}
-
 #home img {
     max-width: 30%;
     height: auto; 
@@ -96,7 +111,7 @@
 }
 
 #home p {
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .home-about {
@@ -107,4 +122,66 @@
 
 .current {
     margin-top: 5%;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+/* About Page Styling **/
+
+#about {
+    margin-top: 10%;
+}
+
+#about img {
+    max-width: 30%;
+    height: auto; 
+    margin-left: 10%;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 48px;
+}
+
+/* Experience Page Styling **/
+
+#experience {
+    margin-top: 10%;
+}
+
+#experience h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 48px;
+}
+
+/* Project Page Styling **/
+
+#projects {
+    margin-top: 10%;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 48px;
+}
+
+/* Contact Page Styling **/
+
+#contact {
+    margin-top: 10%;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 48px;
 }
