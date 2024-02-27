@@ -14,6 +14,7 @@
   <title>Portfolio</title>
 </head>
 
+<body>
 <!-- Navigation Bar -->
 <div class = "navbar">
     <div class = "navdescription">
@@ -45,12 +46,12 @@
 <!-- Pages of The Portfolio -->
 
 <!-- Home Page -->
-<div id = "home" class = "homecontainer">
+<div id = "home" class = "homecontainer fade-in-start">
   <img src = "images/album.jpg" alt = "Lorde"></img>
 
   <div class = "rightside">
     <p>
-      Hi, My Name Is
+      Hi, my name is
     </p>
 
     <h1>
@@ -71,9 +72,9 @@
 </div>
 
 <!-- About Page -->
-<div id = "about">
+<div class = "fade-in" id = "about">
   <h2>
-    About me
+    About Me
   </h2>
 
   <img src = "images/album.jpg" alt = "Lorde"></img>
@@ -84,10 +85,86 @@
 </div>
 
 <!-- Experience Page -->
-<div id = "experience">
+<div class = "fade-in" id = "experience">
   <h2>
     Experience
   </h2>
+
+  <div class = "skills">
+    <div class = "lang-header">
+      <h3>Languages</h3>
+      <div class = "languages">
+        <div class = "left-lang-column">
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-python"></i></span> Python
+          </p>
+          
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-java"></i></span> Java
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-js"></i></span> JavaScript
+          </p>
+            
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-file-code"></i></span> TypeScript
+          </p>
+        </div>
+
+        <div class = "right-lang-column">
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-cow"></i></span> OCaml
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-r"></i></span> R
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-html5"></i></span> HTML/CSS
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "tech-header">
+      <h3>Technologies</h3>
+      <div class = "technologies">
+        <div class = "left-lang-column">
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-react"></i></span> React.js
+          </p>
+          
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-node-js"></i></span> Node.js
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-truck-fast"></i></span>Express.js
+          </p>
+            
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-database"></i></span> MongoDB
+          </p>
+        </div>
+
+        <div class = "right-lang-column">
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-server"></i></span> Firebase
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-brands fa-github"></i></span> Git
+          </p>
+
+          <p>
+            <span class = "icon-span"><i class="fa-solid fa-code-branch"></i></span> Django
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class = "hack">
     
@@ -100,32 +177,105 @@
   <div class = "esw">
     
   </div>
+</div>
 
-  <div class = "skills">
-    <div class = "languages">
+<!-- Project Page -->
+<div class = "fade-in" id = "projects">
+  <h2>
+    Projects
+  </h2>
 
+  <div class = "project-contianer">
+    <div class = "project-row">
+      <div class = "project-right">
+        <h3>Agenda</h3>
+        <p><em>Developer, Solo Project</em></p>
+        <div class = "project-languages">
+          <p>React</p>
+          <p>Express</p>
+          <p>MongoDB</p>
+        </div>
+      </div>
+
+      <div class = "project-left">
+        <h3>Recipe Diary</h3>
+        <p><em>Developer, INFO 1998</em></p>
+        <div class = "project-languages">
+          <p>React</p>
+          <p>Express</p>
+          <p>Firebase</p>
+        </div>
+      </div>
     </div>
 
-    <div class = "technologies">
-      
+    <div class = "project-row">
+      <div class = "project-right">
+        <h3>Arduino GUI</h3>
+        <p><em>Developer, Cornell Hyperloop</em></p>
+        <div class = "project-languages">
+          <p>Python</p>
+        </div>
+      </div>
+
+      <div class = "project-left">
+        <h3>Blackjack</h3>
+        <p><em>Developer, Solo Project</em></p>
+        <div class = "project-languages">
+          <p>JavaScript</p>
+          <p>HTML/CSS</p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "project-row">
+      <div class = "project-right">
+        <h3>Personal Website</h3>
+        <p><em>Developer, Solo Project</em></p>
+        <div class = "project-languages">
+          <p>JavaScript</p>
+          <p>HTML/CSS</p>
+        </div>
+      </div>
+
+      <div class = "project-left">
+        <h3>Cornell Capsule</h3>
+        <p><em>Developer, Cornell WebDev</em></p> 
+        <div class = "project-languages">
+          <p>React</p>
+          <p>Express</p>
+          <p>MongoDB</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Project Page -->
-<div id = "projects">
-  <h2>
-    Projects
-  </h2>
-</div>
-
 <!-- Contact Page -->
-<div id = "contact">
+<div class = "fade-in" id = "contact">
   <h2>
     Contact
   </h2>
+
+  <div class = "contact">
+    <a href="mailto:bsl77@cornell.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+    <p>
+      <a href="mailto:bsl77@cornell.edu" target="_blank">bsl77@cornell.edu</a>
+    </p>
+    <a href = "https://www.linkedin.com/in/brandonlerit/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <p>
+      <a href = "https://www.linkedin.com/in/brandonlerit/" target="_blank">LinkedIn</a>
+    </p>
+    <a href = "https://github.com/brandon-lerit" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <p>
+      <a href = "https://github.com/brandon-lerit" target="_blank">Github</a>
+    </p>
+  </div>
 </div>
 
 <p class = "footer">
   © 2024 Brandon Lerit
 </p>
+
+
+  <script src="scripts.js"></script> 
+</body>

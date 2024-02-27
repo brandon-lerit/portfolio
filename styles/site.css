@@ -5,12 +5,12 @@ html {
 }
 
 .blueword a {
-    color: rgb(57, 156, 255);
+    color: rgb(8, 93, 178);
     font-weight: 600;
 }
 
 .redword a {
-    color: red;
+    color: rgb(225, 48, 48);
     font-weight: 600;
 }
 
@@ -19,6 +19,16 @@ html {
     margin-top: 5%;
     padding: 20px;
 }
+
+.fade-in, .fade-in-start {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+  
+.fade-in-visible, .fade-in-visible-start {
+    opacity: 1;
+}
+
 /** NavBar Styling */
 * {
     background-color: rgb(252, 245, 239);
@@ -162,6 +172,69 @@ h1 {
     font-size: 48px;
 }
 
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.languages, .technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tech-header:hover, .lang-header:hover {
+    scale: 1.1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.left-lang-column, .right-lang-column {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.left-lang-column p, .right-lang-column p {
+    line-height: 3;
+}
+
+.icon-span {
+    letter-spacing: .5em;
+}
+
+.tech-header {
+    display: flex;
+    flex-direction: column;
+    transition: scale 1s ease;
+    border: 2px black solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.lang-header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    transition: scale .5s ease, border-bottom .5s ease, border-right .5s ease;
+    border: 2px black solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+#experience h3 {
+    text-align: center;
+    font-size: 26px;
+}
+
+#experience i {
+    font-size: 30px;
+}
+
+
 /* Project Page Styling **/
 
 #projects {
@@ -174,6 +247,42 @@ h1 {
     font-size: 48px;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.project-right {
+    margin-right: 10%;
+}
+
+.project-right, .project-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.project-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-languages p {
+    margin: 3%;
+}
+
 /* Contact Page Styling **/
 
 #contact {
@@ -184,4 +293,25 @@ h1 {
     text-align: center;
     margin-bottom: 4%;
     font-size: 48px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 45px;
+}
+
+.contact p {
+    font-size: 22px;
+    margin-right: 3%;
+}
+
+.contact a {
+    text-decoration: none;
+    margin-right: 1%;
 }
