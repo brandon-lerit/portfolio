@@ -5,13 +5,24 @@ html {
 }
 
 .blueword a {
-    color: rgb(8, 93, 178);
-    font-weight: 600;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.purpleword {
+    color: rgb(184, 163, 237);
 }
 
 .redword a {
-    color: rgb(225, 48, 48);
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.redword {
+    color: rgb(230, 79, 79);
+    font-weight: 700;
 }
 
 .footer {
@@ -29,21 +40,28 @@ html {
     opacity: 1;
 }
 
-/** NavBar Styling */
 * {
-    background-color: rgb(252, 245, 239);
+    background-color: rgb(43, 43, 43);
+    font-weight: 550;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    color: rgb(13, 13, 13);
+    color: white
 }
+
+/** NavBar Styling */
 
 .navbar {
     display: flex;
     flex-direction: row;
     padding: 40px;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0 0 5px rgb(0, 0, 0); 
+}
+
+.navbar * {
+    background-color: rgb(43, 43, 43);
 }
 
 .navdescription {
@@ -56,34 +74,30 @@ html {
     text-align: left;
 }
 
-.navname {
-    font-size: 30px;
-    background-color: rgb(73, 73, 73);
-    color: white;
+.logo {
+    width: 100px;
+    height: auto;
 }
 
 .links {
-    margin-left: 25%;
     display: flex;
     flex-direction: row;
     gap: 40px;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: rgb(73, 73, 73);
+    margin-left: 33%;
 }
 
 .navbar li {
     list-style: none;
-    background-color: rgb(73, 73, 73);
 }
 
 .navbar li a {
     list-style: none;
     font-size: 22px;
     text-decoration: none;
-    background-color: rgb(73, 73, 73);
     color: white;
-    padding: 10px;
+    padding: 18px;
     border-radius: 10px;
     border-right: 5px solid transparent; 
     border-bottom: 10px solid transparent; 
@@ -101,45 +115,50 @@ html {
 .homecontainer {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-top: 10%;
-}
-
-.rightside {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px; 
-    flex-grow: 1; 
-    align-items: center;
-    justify-content: center;
-}
-
-#home img {
-    max-width: 30%;
-    height: auto; 
+    width: 60%;
+    margin-top: 8%;
     margin-left: 10%;
 }
 
-#home p {
-    line-height: 2;
+.homecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
-.home-about {
-    width: 50%;
-    text-align: center;
-    margin-top: 2%;
-}
-
-.current {
-    margin-top: 5%;
-}
-
-#home p {
+.intro {
+    font-family: monospace;
+    margin-left: .5%;
     font-size: 20px;
 }
 
-h1 {
-    font-size: 48px;
+.home-about {
+    width: 100%;
+    margin-top: 4%;
+    font-size: 22px;
+    line-height: 2;
+    word-spacing: .1em;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.home-links i {
+    font-size: 55px;
+}
+
+.home-links a {
+    text-decoration: none;
+    margin-right: 5%;
 }
 
 /* About Page Styling **/
@@ -151,13 +170,36 @@ h1 {
 #about img {
     max-width: 30%;
     height: auto; 
-    margin-left: 10%;
 }
 
 #about h2 {
     text-align: center;
     margin-bottom: 4%;
     font-size: 48px;
+    font-weight: 600;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rightside {
+    margin-left: 10%;
+    width: 35%;
+}
+
+.rightside p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.about-name {
+    font-weight: 800;
+}
+
+.hobbies em {
+    border-bottom: 1.5px rgb(184, 163, 237) solid;
 }
 
 /* Experience Page Styling **/
@@ -170,6 +212,7 @@ h1 {
     text-align: center;
     margin-bottom: 4%;
     font-size: 48px;
+    font-weight: 600;
 }
 
 .skills {
@@ -185,7 +228,6 @@ h1 {
 
 .tech-header:hover, .lang-header:hover {
     scale: 1.1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .left-lang-column, .right-lang-column {
@@ -198,6 +240,9 @@ h1 {
 
 .left-lang-column p, .right-lang-column p {
     line-height: 3;
+    display: flex;
+    align-items: center;
+    color: rgb(69, 69, 69);
 }
 
 .icon-span {
@@ -207,33 +252,43 @@ h1 {
 .tech-header {
     display: flex;
     flex-direction: column;
-    transition: scale 1s ease;
-    border: 2px black solid;
+    box-shadow: 10px 10px 8px rgb(0, 0, 0);
+    transition: scale .5s ease;
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .lang-header {
     display: flex;
     flex-direction: column;
     margin-right: 5%;
-    transition: scale .5s ease, border-bottom .5s ease, border-right .5s ease;
-    border: 2px black solid;
+    transition: scale .5s ease;
+    box-shadow: 10px 10px 8px rgb(0, 0, 0);
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 10px;
+    background-color: white;
+}
+
+.tech-header *, .lang-header *{
+    background-color: white;
 }
 
 #experience h3 {
     text-align: center;
     font-size: 26px;
+    color: black;
 }
 
 #experience i {
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(16, 16, 16);
 }
-
 
 /* Project Page Styling **/
 
@@ -241,8 +296,13 @@ h1 {
     margin-top: 10%;
 }
 
+.project-type em {
+    color: rgb(100, 100, 100);
+}
+
 #projects h2 {
     text-align: center;
+    font-weight: 600;
     margin-bottom: 4%;
     font-size: 48px;
 }
@@ -260,7 +320,7 @@ h1 {
 }
 
 .project-right {
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .project-right, .project-left {
@@ -268,31 +328,103 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    border: 3px solid black;
+    width: 38%;
     border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 8px rgb(0, 0, 0);
+    background-color: white;
+}
+
+.project-left *, .project-right * {
+    background-color: white;
+}
+
+.project-left p, .project-right p {
+    text-align: center;
 }
 
 .project-languages {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .project-languages p {
     margin: 3%;
 }
 
-/* Contact Page Styling **/
-
-#contact {
-    margin-top: 10%;
+.project-word {
+    font-weight: 700;
+    color: rgb(100, 100, 100);
 }
+
+.project-container h3 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.project-container p {
+    font-size: 18px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(133, 133, 133);
+}
+
+.project-container a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgb(31, 71, 140);
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.project-container a i {
+    background-color: rgb(31, 71, 140);
+    color: white;
+    font-size: 20px;
+}
+
+.project-container a .icon-span {
+    background-color: rgb(31, 71, 140);
+    letter-spacing: .8em;
+}
+
+.language-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.language-name i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: black;
+}
+
+/* Contact Page Styling **/
 
 #contact h2 {
     text-align: center;
     margin-bottom: 4%;
+    font-weight: 600;
     font-size: 48px;
+    margin-top: 10%;
 }
 
 .contact {
@@ -300,6 +432,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .contact i {

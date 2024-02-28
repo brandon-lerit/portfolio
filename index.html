@@ -10,21 +10,17 @@
           href="styles/site.css" >
 
   <script src="https://kit.fontawesome.com/726f94a3ab.js" crossorigin="anonymous"></script>
-
-  <title>Portfolio</title>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="icon" href="images/orange-slime.gif" type="image/gif" sizes = "128x128">
+  <title>Brandon Lerit</title>
 </head>
 
 <body>
 <!-- Navigation Bar -->
-<div class = "navbar">
-    <div class = "navdescription">
-        <p class = "navname">Brandon Lerit</p>
-    </div>
+<div id = "home" class = "navbar">
+    <a href = "#home"><img src = "images/orange-slime.gif" class = "logo"></a>
 
     <ul class = "links">
-        <li>
-            <a href = "#home">Home</a>
-        </li>
         <li>
             <a href = "#about">About</a>
         </li>
@@ -40,34 +36,39 @@
         <li>
             <a href = "#contact">Contact</a>
         </li>
+        <li>
+          <a href = "https://drive.google.com/file/d/1zUp-8jKV0GJ4TORCKZeZ6MDFygO2oBsx/view?usp=drive_link" target="_blank">
+            Resume
+          </a>
+      </li>
     </ul>
 </div>
 
 <!-- Pages of The Portfolio -->
 
 <!-- Home Page -->
-<div id = "home" class = "homecontainer fade-in-start">
-  <img src = "images/album.jpg" alt = "Lorde"></img>
-
-  <div class = "rightside">
-    <p>
+<div class = "homecontainer fade-in-start">
+  <div class = "home-container">
+    <p class = "intro">
       Hi, my name is
     </p>
 
-    <h1>
-      Brandon Lerit
-    </h1>
+    <p class = "name">
+      <span class = "purpleword">Brandon Lerit</span>
+    </p>
 
     <p class = "home-about">
       I am an aspiring <strong>Software Engineer</strong>, currently in my Sophomore Year 
       at <span class = "redword"><a href = https://cis.cornell.edu/ target="_blank">
-        Cornell University</a></span>
+        Cornell University.</a></span> I am currently a Software Developer @
+        <span class = "blueword"><a href = https://www.cornellh4i.org/ target="_blank">Hack4Impact.</a></span>
     </p>
 
-    <p class = "current">
-      Currently, Software Developer @ <span class = "blueword">
-        <a href = https://www.cornellh4i.org/ target="_blank">Hack4Impact</a></span>
-    </p>
+    <div class = "home-links fade-in-start">
+      <a href="mailto:bsl77@cornell.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href = "https://www.linkedin.com/in/brandonlerit/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href = "https://github.com/brandon-lerit" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
   </div>
 </div>
 
@@ -76,53 +77,68 @@
   <h2>
     About Me
   </h2>
+  <div class = "about-container">
+    <img src = "images/album.jpg" alt = "Lorde"></img>
 
-  <img src = "images/album.jpg" alt = "Lorde"></img>
-
-  <div class = "rightside">
-
+    <div class = "rightside">
+      <p>
+        Hello! My name is <span class = "about-name">Brandon Lerit.</span> I am a sophomore studying Computer Science and Information Science
+        at <span class = "redword">Cornell University.</span>
+      </p>
+      <br>
+      <p>
+        My passion lies in developing software that has a positive impact on people and their communities. 
+        My goal is to explore the field of software development while making a lasting impact through 
+        social impact.
+      </p>
+      <br>
+      <p class = "hobbies">
+        Outside of coding, you can find me listening to <em>vinyls</em>, at the <em>bowling</em> alley, 
+        sitting at a <em>chess</em> board, or in a <em>Pokemon</em> battle.
+      </p>
+    </div>
   </div>
 </div>
 
 <!-- Experience Page -->
-<div class = "fade-in" id = "experience">
-  <h2>
+<div id = "experience">
+  <h2 class = "fade-in" >
     Experience
   </h2>
 
-  <div class = "skills">
+  <div class = "skills fade-in">
     <div class = "lang-header">
       <h3>Languages</h3>
       <div class = "languages">
         <div class = "left-lang-column">
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-python"></i></span> Python
+            <span class = "icon-span"><i class="devicon-python-plain colored"></i></span> Python
           </p>
           
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-java"></i></span> Java
+            <span class = "icon-span"><i class="devicon-java-plain colored"></i></span> Java
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-js"></i></span> JavaScript
+            <span class = "icon-span"><i class="devicon-javascript-plain colored"></i></span> JavaScript
           </p>
             
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-file-code"></i></span> TypeScript
+            <span class = "icon-span"><i class="devicon-typescript-plain colored"></i></span> TypeScript
           </p>
         </div>
 
         <div class = "right-lang-column">
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-cow"></i></span> OCaml
+            <span class = "icon-span"><i class="devicon-ocaml-plain colored"></i></span> OCaml
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-r"></i></span> R
+            <span class = "icon-span"><i class="devicon-r-plain colored"></i></span> R
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-html5"></i></span> HTML/CSS
+            <span class = "icon-span"><i class="devicon-html5-plain colored"></i></span> HTML/CSS
           </p>
         </div>
       </div>
@@ -133,130 +149,188 @@
       <div class = "technologies">
         <div class = "left-lang-column">
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-react"></i></span> React.js
+            <span class = "icon-span"><i class="devicon-react-original colored"></i></span> React.js
           </p>
           
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-node-js"></i></span> Node.js
+            <span class = "icon-span"><i class="devicon-nodejs-plain colored"></i></span> Node.js
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-truck-fast"></i></span>Express.js
+            <span class = "icon-span"><i class="devicon-express-original colored"></i></span>Express.js
           </p>
             
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-database"></i></span> MongoDB
+            <span class = "icon-span"><i class="devicon-mongodb-plain colored"></i></span> MongoDB
           </p>
         </div>
 
         <div class = "right-lang-column">
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-server"></i></span> Firebase
+            <span class = "icon-span"><i class="devicon-firebase-plain colored"></i></span> Firebase
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-brands fa-github"></i></span> Git
+            <span class = "icon-span"><i class="devicon-github-original colored"></i></span> Git
           </p>
 
           <p>
-            <span class = "icon-span"><i class="fa-solid fa-code-branch"></i></span> Django
+            <span class = "icon-span"><i class="devicon-django-plain colored"></i></span> Django
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class = "hack">
+  <div class = "hack fade-in">
     
   </div>
 
-  <div class = "hyperloop">
+  <div class = "hyperloop fade-in">
 
   </div>
 
-  <div class = "esw">
+  <div class = "esw fade-in">
     
   </div>
 </div>
 
 <!-- Project Page -->
-<div class = "fade-in" id = "projects">
-  <h2>
+<div id = "projects">
+  <h2 class = "fade-in">
     Projects
   </h2>
 
-  <div class = "project-contianer">
-    <div class = "project-row">
+  <div class = "project-container">
+    <div class = "project-row fade-in">
       <div class = "project-right">
         <h3>Agenda</h3>
-        <p><em>Developer, Solo Project</em></p>
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, Solo Project</em></p>
         <div class = "project-languages">
-          <p>React</p>
-          <p>Express</p>
-          <p>MongoDB</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-react-original colored"></i></span> React
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-express-original colored"></i></span> Express
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-mongodb-plain colored"></i></span> MongoDB
+          </p>
         </div>
+        <p class = "project-description">
+          A Web-App where an authenticated user can create notes to track daily activities.
+        </p>
+        <a href = "https://github.com/brandon-lerit/Agenda" target="_blank"><span class = "icon-span">
+          <i class="fa-brands fa-github"></i></span>View on Github</a>
       </div>
 
       <div class = "project-left">
         <h3>Recipe Diary</h3>
-        <p><em>Developer, INFO 1998</em></p>
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, INFO 1998</em></p>
         <div class = "project-languages">
-          <p>React</p>
-          <p>Express</p>
-          <p>Firebase</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-react-original colored"></i></span> React
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-express-original colored"></i></span> Express
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-firebase-plain colored"></i></span> Firebase
+          </p>
         </div>
+        <p class = "project-description">
+          A Web-App that allows the authenticated user to post, save, and search for recipes entered by other users.
+        </p>
+        <a href = "https://github.com/brandon-lerit/RecipeDiary" target="_blank"><span class = "icon-span">
+          <i class="fa-brands fa-github"></i></span>View on Github</a>
       </div>
     </div>
 
-    <div class = "project-row">
+    <div class = "project-row fade-in">
       <div class = "project-right">
         <h3>Arduino GUI</h3>
-        <p><em>Developer, Cornell Hyperloop</em></p>
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, Cornell Hyperloop</em></p>
         <div class = "project-languages">
-          <p>Python</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-python-plain colored"></i></span> Python
+          </p>
         </div>
+        <p class = "project-description">
+          A GUI that plots data taken from two Arduino Sensors, a Thermistor and Ultrasonic Sensor.
+        </p>
+        <a href = "https://github.com/brandon-lerit/HyperloopOnboarding" target="_blank"><span class = "icon-span">
+          <i class="fa-brands fa-github"></i></span>View on Github</a>
       </div>
 
       <div class = "project-left">
-        <h3>Blackjack</h3>
-        <p><em>Developer, Solo Project</em></p>
+        <h3>Blackjack Clone</h3>
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, Solo Project</em></p>
         <div class = "project-languages">
-          <p>JavaScript</p>
-          <p>HTML/CSS</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-javascript-plain colored"></i></span> JavaScript
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-html5-plain colored"></i></span> HTML/CSS
+          </p>
         </div>
+        <p class = "project-description">
+          A clone of the card game Blackjack, where the user plays against a pre-programmed dealer.
+        </p>
+        <a href = "https://github.com/brandon-lerit/Blackjack" target="_blank"><span class = "icon-span">
+          <i class="fa-brands fa-github"></i></span>View on Github</a>
       </div>
     </div>
 
-    <div class = "project-row">
+    <div class = "project-row fade-in">
       <div class = "project-right">
         <h3>Personal Website</h3>
-        <p><em>Developer, Solo Project</em></p>
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, Solo Project</em></p>
         <div class = "project-languages">
-          <p>JavaScript</p>
-          <p>HTML/CSS</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-javascript-plain colored"></i></span> JavaScript
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-html5-plain colored"></i></span> HTML/CSS
+          </p>
         </div>
+        <p class = "project-description">
+          A Website coded using HTML/CSS and JavaScript to showcase previous work and future aspirations.
+        </p>
+        <a href = "https://github.com/brandon-lerit/Portfolio" target="_blank"><span class = "icon-span">
+          <i class="fa-brands fa-github"></i></span>View on Github</a>
       </div>
 
       <div class = "project-left">
         <h3>Cornell Capsule</h3>
-        <p><em>Developer, Cornell WebDev</em></p> 
+        <p class = "project-type"><em><span class = "project-word">Developer</span>, Cornell WebDev</em></p> 
         <div class = "project-languages">
-          <p>React</p>
-          <p>Express</p>
-          <p>MongoDB</p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-react-original colored"></i></span> React
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-express-original colored"></i></span> Express
+          </p>
+          <p class = "language-name">
+            <span class = "icon-span"><i class="devicon-mongodb-plain colored"></i></span> MongoDB
+          </p>
         </div>
+        <p class = "project-description">
+          A Web-App where Cornell Students enter text/pictures that will be displayed to them at the semester's end.
+        </p>
+        <a href = "https://github.com/brandon-lerit" target="_blank"><span class = "icon-span">
+          <!--<i class="fa-brands fa-github"></i>--></span>Coming Soon!</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Contact Page -->
-<div class = "fade-in" id = "contact">
-  <h2>
+<div id = "contact">
+  <h2 class = "fade-in">
     Contact
   </h2>
 
-  <div class = "contact">
+  <div class = "contact fade-in">
     <a href="mailto:bsl77@cornell.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
     <p>
       <a href="mailto:bsl77@cornell.edu" target="_blank">bsl77@cornell.edu</a>
