@@ -95,10 +95,8 @@ strong {
 .links {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 33%;
+    gap: 60px;
+    margin: auto;
 }
 
 .navbar li {
