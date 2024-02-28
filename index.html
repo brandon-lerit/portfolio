@@ -78,7 +78,7 @@
     About Me
   </h2>
   <div class = "about-container">
-    <img src = "images/album.jpg" alt = "Lorde"></img>
+    <img src = "images/me.jpg" alt = "Lorde"></img>
 
     <div class = "rightside">
       <p>
@@ -88,8 +88,8 @@
       <br>
       <p>
         My passion lies in developing software that has a positive impact on people and their communities. 
-        My goal is to explore the field of software development while making a lasting impact through 
-        social impact.
+        My goal is to explore the field of software development while making a lasting 
+        <span class = "blueword">social impact.</span>
       </p>
       <br>
       <p class = "hobbies">
@@ -106,9 +106,91 @@
     Experience
   </h2>
 
+  <div class = "project-teams fade-in">
+    <div class = "experience-tags">
+      <div class = "experience-names">
+        <div id = "hack-button" class = "hack active button" onclick = "clickHack()">
+          Hack4Impact
+        </div>
+
+        <div id = "hyperloop-button" class = "hyperloop button" onclick = "clickHyperloop()">
+          Cornell Hyperloop
+        </div>
+
+        <div id = "esw-button" class = "esw button" onclick = "clickEsw()">
+          Engineers for a Sustainable World
+        </div>
+
+        <div id = "webdev-button" class = "webdev button" onclick = "clickWeb()">
+          Cornell WebDev
+        </div>
+      </div>
+
+      <div id = "hack" class = "hack-gallery">
+        <h3 class = "gallery-title">
+          Software Developer
+        </h3>
+        <p>
+          Feburary 2024 - Present
+        </p>
+
+        <ul>
+          <li>Collaborating with Lagos Food Bank which provides food to malnourished children and infants to implement a portal that streamlines events and volunteer sign-up forms by transferring hard-copy documents to the website.</li>
+          <li>Collaborating with a team of 3 designers to develop a website suited to user needs.</li>
+          <li>Working with 6 developers utilizing MERN stack and Tailwind CSS to create the website's functionality and style.</li>
+        </ul>
+      </div>
+
+      <div id = "hyperloop" class = "hyperloop-gallery hidden">
+        <h3 class = "gallery-title">
+          UI Engineer & Website Lead
+        </h3>
+        <p>
+          October 2023 - Present
+        </p>
+
+        <ul>
+          <li>Developing and maintaining the GUI for the Hyperloop train pod and ensured accurate communication of information from sensors to the main computer.</li>
+          <li>Collaborating with 1 other member to redesign and develop the Hyperloop website.</li>
+          <li>Ensures website is meeting proper needs and running effectively/efficiently</li>
+        </ul>
+      </div>
+
+      <div id = "esw" class = "esw-gallery hidden">
+        <h3 class = "gallery-title">
+          Software Developer
+        </h3>
+        <p>
+          October 2023 - January 2024
+        </p>
+
+        <ul>
+          <li>Developed a website with targeted use by 2,000 students to promote sustainability and efficiently distribute food leftovers from club events and the dining halls at Cornell University</li>
+          <li>Utilizing Django and API interaction to transfer event data to the website’s display</li>
+        </ul>
+      </div>
+
+      <div id = "webdev" class = "webdev-gallery hidden">
+        <h3 class = "gallery-title">
+          Full-Stack Developer
+        </h3>
+        <p>
+          September 2023 - Present
+        </p>
+
+        <ul>
+          <li>Developing Cornell Capsule, a website for Cornell Students to store pictures, text, and videos for major Cornell events
+            that will be displayed at the semester’s end</li>
+          <li>Utilizing the MERN stack to employ functionality and storage</li>
+          <li>Collaborating with 2 developers and 2 designers to implement the functionality and design of the website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class = "skills fade-in">
     <div class = "lang-header">
-      <h3>Languages</h3>
+      <h3 class = "skill-title">Languages</h3>
       <div class = "languages">
         <div class = "left-lang-column">
           <p>
@@ -145,7 +227,7 @@
     </div>
 
     <div class = "tech-header">
-      <h3>Technologies</h3>
+      <h3 class = skill-title>Technologies</h3>
       <div class = "technologies">
         <div class = "left-lang-column">
           <p>
@@ -180,18 +262,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class = "hack fade-in">
-    
-  </div>
-
-  <div class = "hyperloop fade-in">
-
-  </div>
-
-  <div class = "esw fade-in">
-    
   </div>
 </div>
 

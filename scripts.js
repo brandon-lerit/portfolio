@@ -33,3 +33,94 @@ document.addEventListener('DOMContentLoaded', function() {
       );
     }
   });
+
+//Experience Gallery
+
+function clickHack() {
+  var hack = document.getElementById('hack');
+  var hyperloop = document.getElementById('hyperloop');
+  var esw = document.getElementById('esw');
+  var webdev = document.getElementById('webdev');
+
+  var hackButton = document.getElementById('hack-button');
+  var hyperloopButton = document.getElementById('hyperloop-button');
+  var eswButton = document.getElementById('esw-button');
+  var webdevButton = document.getElementById('webdev-button');
+
+  hackButton.classList.add('active');
+  hyperloopButton.classList.remove('active');
+  eswButton.classList.remove('active');
+  webdevButton.classList.remove('active');
+
+  hack.classList.remove('hidden');
+  hyperloop.classList.add('hidden');
+  esw.classList.add('hidden');
+  webdev.classList.add('hidden');
+
+}
+
+function clickHyperloop() {
+  var hack = document.getElementById('hack');
+  var hyperloop = document.getElementById('hyperloop');
+  var esw = document.getElementById('esw');
+  var webdev = document.getElementById('webdev');
+
+  var hackButton = document.getElementById('hack-button');
+  var hyperloopButton = document.getElementById('hyperloop-button');
+  var eswButton = document.getElementById('esw-button');
+  var webdevButton = document.getElementById('webdev-button');
+
+  hackButton.classList.remove('active');
+  hyperloopButton.classList.add('active');
+  eswButton.classList.remove('active');
+  webdevButton.classList.remove('active');
+
+  hack.classList.add('hidden');
+  hyperloop.classList.remove('hidden');
+  esw.classList.add('hidden');
+  webdev.classList.add('hidden');
+}
+
+function clickEsw() {
+  var hack = document.getElementById('hack');
+  var hyperloop = document.getElementById('hyperloop');
+  var esw = document.getElementById('esw');
+  var webdev = document.getElementById('webdev');
+
+  var hackButton = document.getElementById('hack-button');
+  var hyperloopButton = document.getElementById('hyperloop-button');
+  var eswButton = document.getElementById('esw-button');
+  var webdevButton = document.getElementById('webdev-button');
+
+  hackButton.classList.remove('active');
+  hyperloopButton.classList.remove('active');
+  eswButton.classList.add('active');
+  webdevButton.classList.remove('active');
+
+  hack.classList.add('hidden');
+  hyperloop.classList.add('hidden');
+  esw.classList.remove('hidden');
+  webdev.classList.add('hidden');
+}
+
+function clickWeb() {
+  var hack = document.getElementById('hack');
+  var hyperloop = document.getElementById('hyperloop');
+  var esw = document.getElementById('esw');
+  var webdev = document.getElementById('webdev');
+
+  var hackButton = document.getElementById('hack-button');
+  var hyperloopButton = document.getElementById('hyperloop-button');
+  var eswButton = document.getElementById('esw-button');
+  var webdevButton = document.getElementById('webdev-button');
+
+  hackButton.classList.remove('active');
+  hyperloopButton.classList.remove('active');
+  eswButton.classList.remove('active');
+  webdevButton.classList.add('active');
+
+  hack.classList.add('hidden');
+  hyperloop.classList.add('hidden');
+  esw.classList.add('hidden');
+  webdev.classList.remove('hidden');
+}
