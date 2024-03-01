@@ -753,12 +753,16 @@ strong {
         font-size: 18px;
     }
 
-    .language-name {
-        font-size: 12px;
+    .project-languages p {
+        font-size: 15px;
     }
 
     .language-name {
-        max-width: 80%;
+        max-width: 60%;
+    }
+
+    .project-left p, .project-right p {
+        font-size: 14px;
     }
 
     /* Contact Styling **/
