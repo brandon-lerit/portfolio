@@ -14,25 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
 //Scrolling Fade
 
 document.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('scroll', function() {
-      let elements = document.querySelectorAll('.fade-in');
-      for (let element of elements) {
-        if (isElementInViewport(element)) {
-          element.classList.add('fade-in-visible');
-        }
+  window.addEventListener('scroll', function() {
+    let elements = document.querySelectorAll('.fade-in');
+    for (let element of elements) {
+      if (isElementInViewport(element)) {
+        element.classList.add('fade-in-visible');
       }
-    });
-  
-    function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
     }
   });
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    var verticalInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    var horizontalInView = rect.left <= window.innerWidth && rect.right >= 0;
+    return verticalInView && horizontalInView;
+  }
+});
 
 //Experience Gallery
 

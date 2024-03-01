@@ -690,6 +690,10 @@ strong {
         justify-content: center;
     }
 
+    .tech-header:hover, .lang-header:hover {
+        scale: 1.0;
+    }    
+
     .skills * {
         margin: 0;
     }
@@ -702,6 +706,16 @@ strong {
 
     .left-lang-column, .right-lang-column {
         width: 50%;
+    }
+
+    .left-lang-column, .right-lang-column {
+        padding: 0;
+    }
+
+    .languages, .technologies {
+        margin-left: auto;
+        margin-right: auto;
+        gap: 30px;
     }
 
     /* Project Page **/
@@ -732,11 +746,15 @@ strong {
     }
 
     .language-name i {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .language-name {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .language-name {
+        max-width: 100%;
     }
 
     /* Contact Styling **/
