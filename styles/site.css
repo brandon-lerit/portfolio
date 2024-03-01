@@ -586,6 +586,9 @@ strong {
     .home-about {
         font-size: 15px;
         text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .home-links {
@@ -727,6 +730,7 @@ strong {
     .project-row {
         flex-direction: column;
         width: 100%;
+        margin: 0;
     }
 
     .project-right, .project-left {
@@ -754,7 +758,7 @@ strong {
     }
 
     .language-name {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     /* Contact Styling **/
@@ -782,7 +786,7 @@ strong {
         padding: 0;
         padding-bottom: 20px;
         padding-top: 20px;
-        padding-right: 10px;
+        padding-right: 30px;
     }
 
     .links {
