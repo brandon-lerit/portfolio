@@ -124,3 +124,23 @@ function clickWeb() {
   esw.classList.add('hidden');
   webdev.classList.remove('hidden');
 }
+
+/** Hamburger Menu */
+
+document.getElementById('hamburger').addEventListener('click', function() {
+  var links = document.querySelector('.links');
+  links.classList.toggle('expanded');
+
+  if (links.classList.contains('expanded')) {
+      links.style.opacity = '0';
+      links.style.display = 'flex';
+      void links.offsetWidth;
+      links.style.opacity = '1';
+  } 
+  else {
+      links.style.opacity = '0';
+      setTimeout(function() {
+          links.style.display = 'none';
+      }, 500); 
+  }
+});
