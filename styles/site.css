@@ -783,13 +783,15 @@ strong {
     #hamburger {
         margin-left: auto;
         display: block; 
+        padding-right: 20px;
+        padding-top: 10px;
     }
 
     .navbar {
         padding: 0;
+        flex-direction: column;
+        width: 100%;
         padding-bottom: 20px;
-        padding-top: 20px;
-        padding-right: 30px;
     }
 
     .links {
@@ -797,6 +799,7 @@ strong {
         display: none;
         transition: opacity 0.5s ease;
         gap: 22px;
+        width: 100%;
     }
 
     .links li a {
